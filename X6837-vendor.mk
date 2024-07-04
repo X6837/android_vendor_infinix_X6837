@@ -14,8 +14,10 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789 \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
+    vendor/infinix/X6837/proprietary/vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq@2.2-service \
+    vendor/infinix/X6837/proprietary/vendor/bin/kmsetkey_ca.trustonic:$(TARGET_COPY_OUT_VENDOR)/bin/kmsetkey_ca.trustonic \
     vendor/infinix/X6837/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
     vendor/infinix/X6837/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
     vendor/infinix/X6837/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
@@ -158,8 +160,10 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/etc/init/init.fpsgo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fpsgo.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
+    vendor/infinix/X6837/proprietary/vendor/etc/init/trustonic.mc_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.mc_kmsetkey_ca.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/vendor.fpsensor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.fpsensor.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/vendor.goodix.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.goodix.rc \
+    vendor/infinix/X6837/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
@@ -285,6 +289,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/egl/mt6789/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/mt6789/libGLES_mali.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/audio.primary.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mediatek.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/audio.r_submix.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.mediatek.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/hw/kmsetkey.trustonic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/kmsetkey.trustonic.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/libMcGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libMcGatekeeper.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
@@ -292,6 +297,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/mt6789/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vulkan.mali.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/power.mt6789.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.mt6789.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDefaultFpsActor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFrameRecord.so \
@@ -324,6 +330,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc32_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbwc.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvsd_mtk.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libdecrypt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdecrypt.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib/libged.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpu_aux.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libgpud.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpud.so \
@@ -367,6 +374,8 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@6.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@7.1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mmagent@1.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mmagent@1.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.0.so \
@@ -404,6 +413,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/fpsensor_fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fpsensor_fingerprint.default.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/gf_fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gf_fingerprint.default.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/hwcomposer.mtk_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mtk_common.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/hw/kmsetkey.trustonic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/kmsetkey.trustonic.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/libMcGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libMcGatekeeper.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
@@ -411,6 +421,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vulkan.mali.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/power.mt6789.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.mt6789.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDefaultFpsActor.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFrameRecord.so \
@@ -447,6 +458,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/libccci_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libccci_util.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libcomposer_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcomposer_ext.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvsd_mtk.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libdecrypt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdecrypt.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libged.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ca.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
@@ -459,6 +471,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_ulit.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libkaraoke.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkaraoke.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libkmsetkey.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkmsetkey.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmipc.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmml.so \
@@ -516,6 +529,8 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio@6.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio@7.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.composer_ext@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mmagent@1.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mmagent@1.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.0.so \
