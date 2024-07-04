@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/infinix/X6837
 
 PRODUCT_COPY_FILES += \
+    vendor/infinix/X6837/proprietary/vendor/bin/audiocmdservice_atci:$(TARGET_COPY_OUT_VENDOR)/bin/audiocmdservice_atci \
     vendor/infinix/X6837/proprietary/vendor/bin/ccci_mdinit:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_mdinit \
     vendor/infinix/X6837/proprietary/vendor/bin/ccci_rpcd:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_rpcd \
     vendor/infinix/X6837/proprietary/vendor/bin/em_hidl:$(TARGET_COPY_OUT_VENDOR)/bin/em_hidl \
@@ -16,7 +17,121 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq@2.2-service \
     vendor/infinix/X6837/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
     vendor/infinix/X6837/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/BtInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/BtInfo_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/CRSVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVolUI_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/CRSVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVolUI_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/CRSVol_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVol_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/CRSVol_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/CRSVol_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/HpImpedance_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/HpImpedance_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/HpImpedance_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/HpImpedance_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/MicInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/MicInfo_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/MicInfo_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/MicInfo_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/PlaybackACF_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackACF_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/PlaybackACF_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackACF_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/PlaybackDRC_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackDRC_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/PlaybackDRC_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackDRC_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/PlaybackHCF_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackHCF_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/PlaybackHCF_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackHCF_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/PlaybackVolAna_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackVolAna_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/PlaybackVolAna_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackVolAna_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/PlaybackVolDigi_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackVolDigi_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/PlaybackVolDigi_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackVolDigi_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/PlaybackVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackVolUI_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/PlaybackVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/PlaybackVolUI_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/Playback_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Playback_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/Playback_ParamTreeView.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Playback_ParamTreeView.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/Playback_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Playback_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/RecordDMNR_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordDMNR_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/RecordDMNR_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordDMNR_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/RecordFIR_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordFIR_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/RecordFIR_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordFIR_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/RecordUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordUI_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/RecordUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordUI_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/RecordVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordVolUI_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/RecordVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordVolUI_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/RecordVol_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordVol_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/RecordVol_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RecordVol_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/Record_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Record_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/Record_ParamTreeView.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Record_ParamTreeView.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/Record_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Record_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/RingbackVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RingbackVolUI_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/RingbackVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RingbackVolUI_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/RingbackVol_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RingbackVol_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/RingbackVol_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/RingbackVol_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SmartPa_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SmartPa_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SmartPa_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SmartPa_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SoundEnhancement_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SoundEnhancement_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SoundEnhancement_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SoundEnhancement_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechDMNR_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechDMNR_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechDMNR_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechDMNR_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechEchoRef_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechEchoRef_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechEchoRef_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechEchoRef_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechGeneral_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechGeneral_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechGeneral_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechGeneral_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechMagiClarity_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechMagiClarity_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechMagiClarity_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechMagiClarity_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechNetwork_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechNetwork_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechNetwork_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechNetwork_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechUI_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechUI_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVolUI_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVolUI_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechVol_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVol_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/SpeechVol_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/SpeechVol_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/Speech_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Speech_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/Speech_ParamTreeView.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Speech_ParamTreeView.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/Speech_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Speech_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/USBCall_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/USBCall_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/USBCall_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/USBCall_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/USBDevice_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/USBDevice_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/USBDevice_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/USBDevice_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/Ultrasound_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Ultrasound_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/Ultrasound_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Ultrasound_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/UplinkConfiguration_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/UplinkConfiguration_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/UplinkConfiguration_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/UplinkConfiguration_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPDMNR_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPDMNR_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPDMNR_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPDMNR_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPGeneral_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPGeneral_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPGeneral_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPGeneral_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPUI_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPUI_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPVolUI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPVolUI_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPVolUI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPVolUI_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPVol_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPVol_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPVol_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPVol_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIP_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIP_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIP_ParamTreeView.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIP_ParamTreeView.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIP_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIP_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPv2DMNR_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2DMNR_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPv2DMNR_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2DMNR_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPv2General_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2General_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPv2General_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2General_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPv2UI_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2UI_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPv2UI_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2UI_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPv2_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPv2_ParamTreeView.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2_ParamTreeView.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoIPv2_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoIPv2_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoWDspAec_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWDspAec_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoWDspAec_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWDspAec_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoWEngineFeature_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWEngineFeature_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoWEngineFeature_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWEngineFeature_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoWHwVad_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWHwVad_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoWHwVad_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWHwVad_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoWMicSetting_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWMicSetting_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoWMicSetting_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWMicSetting_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoWVoiceCommand_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWVoiceCommand_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VoWVoiceCommand_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VoWVoiceCommand_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VolumeGainMapUL_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMapUL_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VolumeGainMapUL_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMapUL_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VolumeGainMap_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMap_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
     vendor/infinix/X6837/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/infinix/X6837/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
     vendor/infinix/X6837/proprietary/vendor/etc/ecc_list_OP02.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP02.xml \
@@ -32,6 +147,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/etc/ili7807s_fhdp_dsi_vdo_tm_tm_120hz_x6837_cust_color.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ili7807s_fhdp_dsi_vdo_tm_tm_120hz_x6837_cust_color.xml \
     vendor/infinix/X6837/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
+    vendor/infinix/X6837/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/em_hidl_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hidl_user.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
@@ -159,6 +275,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/firmware/soc_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_patch.bin \
     vendor/infinix/X6837/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
     vendor/infinix/X6837/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
+    vendor/infinix/X6837/proprietary/vendor/lib/audio_common-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/audio_common-aidl-cpp.so \
     vendor/infinix/X6837/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/infinix/X6837/proprietary/vendor/lib/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_meow.so \
     vendor/infinix/X6837/proprietary/vendor/lib/egl/libMEOW_data.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_data.so \
@@ -166,6 +283,8 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/egl/libMEOW_qt.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_qt.so \
     vendor/infinix/X6837/proprietary/vendor/lib/egl/libMEOW_trace.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_trace.so \
     vendor/infinix/X6837/proprietary/vendor/lib/egl/mt6789/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/mt6789/libGLES_mali.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/hw/audio.primary.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mediatek.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/hw/audio.r_submix.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.mediatek.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/mt6789/gralloc.common.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/gralloc.common.so \
@@ -176,11 +295,34 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDefaultFpsActor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFrameRecord.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcClient.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libMtkSpeechEnh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkSpeechEnh.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libNoFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libNoFpsActor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libTransNS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTransNS.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_iir.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/lib_speech_enh.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_speech_enh.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libaal_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_cust.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_key.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_mtk.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_param_parser-vnd.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioclient_aidl_conversion.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilter_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libaudiocompensationfilterc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilterc.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libaudiocomponentengine_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocomponentengine_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libaudiocomponentenginec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocomponentenginec.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libaudiocustparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocustparam_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libaudiodcrflt_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiodcrflt_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libaudiofmtconv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofmtconv.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofoundation.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libaudioloudc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioloudc.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioprimarydevicehalifclient.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libaudiosmartpamtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiosmartpamtk.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiotoolkit_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libaurisysdemo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaurisysdemo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbessound_hd_mtk_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc32_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbwc.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvsd_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib/libged.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpu_aux.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libgpud.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpud.so \
@@ -189,17 +331,26 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/libgralloctypes_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloctypes_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_ulit.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libkaraoke.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkaraoke.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libladder.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmml.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libmsbc_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmsbc_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libmtkcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcutils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libmtklimiter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtklimiter_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libmtkperf_client_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkperf_client_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libmtkproperty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkproperty.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libmtkrillog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkrillog.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libmtkshifter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkshifter_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libnxp_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnxp_extamp_intf.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libperfctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfctl_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libpower_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpower_timer.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libpowerhal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhal.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhalwrap_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpqframework.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/librt_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib/librt_extamp_intf.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeech_enh_lib.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeechparser_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libudf.so \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/arm.graphics-V1-ndk_platform.so \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaalservice.so \
@@ -211,6 +362,10 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libpq_cust_base.so \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libpq_prot.so \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libpqparamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libpqparamparser.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing_mtk.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@6.1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@7.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mmagent@1.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mmagent@1.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.0.so \
@@ -236,12 +391,15 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.7.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.7.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.8.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.8.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.9.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.9.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/audio_common-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/audio_common-aidl-cpp.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_meow.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/egl/libMEOW_data.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_data.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/egl/libMEOW_gift.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_gift.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/egl/libMEOW_qt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_qt.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/egl/libMEOW_trace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_trace.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/egl/mt6789/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/mt6789/libGLES_mali.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/hw/audio.primary.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mediatek.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/hw/audio.r_submix.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.mediatek.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/fpsensor_fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fpsensor_fingerprint.default.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/gf_fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gf_fingerprint.default.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/hwcomposer.mtk_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mtk_common.so \
@@ -255,15 +413,38 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDefaultFpsActor.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFrameRecord.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMcClient.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libMtkSpeechEnh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMtkSpeechEnh.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libNoFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libNoFpsActor.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libTransNS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTransNS.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_iir.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/lib_speech_enh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_speech_enh.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libaal_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_cust.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_key.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_mtk.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_param_parser-vnd.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioclient_aidl_conversion.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocompensationfilter_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaudiocompensationfilterc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocompensationfilterc.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaudiocomponentengine_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocomponentengine_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaudiocomponentenginec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocomponentenginec.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaudiocustparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocustparam_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaudiodcrflt_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiodcrflt_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaudiofmtconv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofmtconv.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofoundation.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaudioloudc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioloudc.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioprimarydevicehalifclient.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaudiosmartpamtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiosmartpamtk.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiotoolkit_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaurisysdemo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaurisysdemo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbessound_hd_mtk_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblisrc32_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbwc.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libcares_naptr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcares_naptr.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libcarrierconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcarrierconfig.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libccci_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libccci_util.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libcomposer_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcomposer_ext.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvsd_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libged.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ca.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
@@ -275,25 +456,30 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/libgralloctypes_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloctypes_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_ulit.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libkaraoke.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkaraoke.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmipc.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmml.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmnetlink_v104.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmnetlink_v104.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libmsbc_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmsbc_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtk-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk-ril.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtkares.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkares.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtkconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkconfig.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtkconfigutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkconfigutils.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtkcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcutils.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtkhardware_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkhardware_legacy.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libmtklimiter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtklimiter_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtknetcap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtknetcap.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtknetutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtknetutils.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtkperf_client_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkperf_client_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtkproperty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkproperty.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtkrillog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrillog.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtkrilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrilutils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libmtkshifter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkshifter_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtksysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtksysutils.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtktinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtktinyxml.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtkutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkutils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libnxp_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnxp_extamp_intf.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libperfctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfctl_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libpower_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpower_timer.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libpowerhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhal.so \
@@ -301,8 +487,12 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqframework.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libratconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libratconfig.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/librilfusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilfusion.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/librt_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librt_extamp_intf.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeech_enh_lib.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeechparser_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libstorage_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstorage_otp.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libsysenv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysenv.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libtneclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtneclient.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libtranlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranlog.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libtrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrm.so \
@@ -319,6 +509,10 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libpq_cust_base.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libpq_prot.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libpqparamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libpqparamparser.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing_mtk.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio@6.1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio@7.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.composer_ext@1.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mmagent@1.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mmagent@1.1.so \
