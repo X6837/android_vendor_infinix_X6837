@@ -25,6 +25,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/lib64/libvt_avsync.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvt_avsync.so \
     vendor/infinix/X6837/proprietary/system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/infinix/X6837/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
+    vendor/infinix/X6837/proprietary/system_ext/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so \
     vendor/infinix/X6837/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/infinix/X6837/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
     vendor/infinix/X6837/proprietary/vendor/app/mcRegistry/031c0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/031c0000000000000000000000000000.drbin \
@@ -78,6 +79,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.mtk \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.2-service-mediatekv2 \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789 \
+    vendor/infinix/X6837/proprietary/vendor/bin/hw/mt6789/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mt6789/camerahalserver \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/tetheroffloadservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/tetheroffloadservice \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service \
@@ -85,6 +87,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.nvram@1.1-service \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq@2.2-service \
+    vendor/infinix/X6837/proprietary/vendor/bin/hw/vendor.transsion.hardware.trancam.trancamserver@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.transsion.hardware.trancam.trancamserver@1.0-service \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/vendor.trustonic.tee@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.trustonic.tee@1.1-service \
     vendor/infinix/X6837/proprietary/vendor/bin/hw/vtservice_hidl:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vtservice_hidl \
     vendor/infinix/X6837/proprietary/vendor/bin/ipsec_mon:$(TARGET_COPY_OUT_VENDOR)/bin/ipsec_mon \
@@ -92,6 +95,8 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/bin/lbs_hidl_service:$(TARGET_COPY_OUT_VENDOR)/bin/lbs_hidl_service \
     vendor/infinix/X6837/proprietary/vendor/bin/mcDriverDaemon:$(TARGET_COPY_OUT_VENDOR)/bin/mcDriverDaemon \
     vendor/infinix/X6837/proprietary/vendor/bin/mnld:$(TARGET_COPY_OUT_VENDOR)/bin/mnld \
+    vendor/infinix/X6837/proprietary/vendor/bin/mt6789/dumpfaultd.mt6789:$(TARGET_COPY_OUT_VENDOR)/bin/mt6789/dumpfaultd.mt6789 \
+    vendor/infinix/X6837/proprietary/vendor/bin/mt6789/jpegtool:$(TARGET_COPY_OUT_VENDOR)/bin/mt6789/jpegtool \
     vendor/infinix/X6837/proprietary/vendor/bin/mt6789/v3avpud.mt6789:$(TARGET_COPY_OUT_VENDOR)/bin/mt6789/v3avpud.mt6789 \
     vendor/infinix/X6837/proprietary/vendor/bin/mtk_agpsd:$(TARGET_COPY_OUT_VENDOR)/bin/mtk_agpsd \
     vendor/infinix/X6837/proprietary/vendor/bin/mtk_pkm_service:$(TARGET_COPY_OUT_VENDOR)/bin/mtk_pkm_service \
@@ -114,6 +119,14 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
     vendor/infinix/X6837/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
     vendor/infinix/X6837/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
+    vendor/infinix/X6837/proprietary/vendor/etc/anc_siq/cache_gc32e1_17201856_front_g97:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/cache_gc32e1_17201856_front_g97 \
+    vendor/infinix/X6837/proprietary/vendor/etc/anc_siq/cache_s5khm6sx_17201842_back_g97:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/cache_s5khm6sx_17201842_back_g97 \
+    vendor/infinix/X6837/proprietary/vendor/etc/anc_siq/dgain_mask_gc32e1_17201856_front_g97.bin:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/dgain_mask_gc32e1_17201856_front_g97.bin \
+    vendor/infinix/X6837/proprietary/vendor/etc/anc_siq/dgain_mask_s5khm6sx_17201842_back_g97.bin:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/dgain_mask_s5khm6sx_17201842_back_g97.bin \
+    vendor/infinix/X6837/proprietary/vendor/etc/anc_siq/siq_ocl_cache_gc32e1_17201856_front_g97:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/siq_ocl_cache_gc32e1_17201856_front_g97 \
+    vendor/infinix/X6837/proprietary/vendor/etc/anc_siq/siq_ocl_cache_s5khm6sx_17201842_back_g97:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/siq_ocl_cache_s5khm6sx_17201842_back_g97 \
+    vendor/infinix/X6837/proprietary/vendor/etc/anc_siq/superiq_model_gc32e1_17201856_front_g97:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/superiq_model_gc32e1_17201856_front_g97 \
+    vendor/infinix/X6837/proprietary/vendor/etc/anc_siq/superiq_model_s5khm6sx_17201842_back_g97:$(TARGET_COPY_OUT_VENDOR)/etc/anc_siq/superiq_model_s5khm6sx_17201842_back_g97 \
     vendor/infinix/X6837/proprietary/vendor/etc/armnn_app.config:$(TARGET_COPY_OUT_VENDOR)/etc/armnn_app.config \
     vendor/infinix/X6837/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
     vendor/infinix/X6837/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
@@ -269,6 +282,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
+    vendor/infinix/X6837/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/dmc_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmc_core.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/em_hidl_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hidl_user.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
@@ -317,6 +331,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
+    vendor/infinix/X6837/proprietary/vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/infinix/X6837/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
@@ -480,6 +495,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/etc/thermal/thermal_policy_00.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_00.conf \
     vendor/infinix/X6837/proprietary/vendor/etc/thermal/thermal_policy_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_02.conf \
     vendor/infinix/X6837/proprietary/vendor/etc/thermal/thermal_policy_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_08.conf \
+    vendor/infinix/X6837/proprietary/vendor/etc/trancam_filelock.json:$(TARGET_COPY_OUT_VENDOR)/etc/trancam_filelock.json \
     vendor/infinix/X6837/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
     vendor/infinix/X6837/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/infinix/X6837/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
@@ -591,6 +607,9 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/firmware/soc_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_patch.bin \
     vendor/infinix/X6837/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
     vendor/infinix/X6837/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
+    vendor/infinix/X6837/proprietary/vendor/lib/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/AVCSecureVdecCA.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/HEVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/HEVCSecureVdecCA.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/VP9SecureVdecCA.so \
     vendor/infinix/X6837/proprietary/vendor/lib/audio_common-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/audio_common-aidl-cpp.so \
     vendor/infinix/X6837/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/infinix/X6837/proprietary/vendor/lib/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_meow.so \
@@ -609,6 +628,8 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/mt6789/gralloc.common.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/gralloc.common.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/mt6789/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vulkan.mali.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/power.mt6789.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.mt6789.so \
@@ -617,8 +638,219 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so \
     vendor/infinix/X6837/proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libAVCSecureVencCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAVCSecureVencCA.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_360VideoHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_360VideoHDR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_3rd_B612.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_3rd_B612.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_3rd_Capture_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_3rd_Preview_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_ARshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_ARshot.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Capture_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Default_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Default_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Default_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Default_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_FaceBeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_FaceBeauty_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_FaceBeauty_Capture_MF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_FaceBeauty_Capture_MF.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_FilmVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_FilmVideo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Filter_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Filter_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_HDR_MINUS_EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_LLHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_LLHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_MT_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_MT_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_MT_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_MT_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_NHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Panorama_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Portrait_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Portrait_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Preview_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Pro_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Pro_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_ShortVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_ShortVideo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Slowmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Slowmotion.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_SuperNight.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Super_Flash_Screen.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Super_Flash_Screen.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Super_Flash_ScreenTorch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Super_Flash_ScreenTorch.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Super_Flash_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Super_Flash_torch.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_TimeLapse.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_TimeLapse.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_TimeLapse_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_TimeLapse_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_TimeLapse_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_TimeLapse_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Video_1080P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Video_1080P_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Video_1080P_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Video_1080P_60fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Video_1080P_60fps_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Video_1080P_60fps_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Video_2k_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Video_2k_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Video_720P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Video_720P_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Video_EIS.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Video_EIS_zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Video_EIS_zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Video_Makeup_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Video_Makeup_720P.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_gc32e1mipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc32e1mipiraw_Video_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_360VideoHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_360VideoHDR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_3rd_B612.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_3rd_B612.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_3rd_Capture_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_3rd_Preview_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_ARshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_ARshot.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Capture_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Default_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Default_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Default_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Default_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_FaceBeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_FaceBeauty_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_FaceBeauty_Capture_MF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_FaceBeauty_Capture_MF.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_FilmVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_FilmVideo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Filter_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Filter_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_HDR_MINUS_EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_LLHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_LLHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_MT_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_MT_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_MT_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_MT_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_NHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Panorama_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Portrait_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Portrait_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Preview_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Pro_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Pro_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_ShortVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_ShortVideo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Slowmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Slowmotion.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_SuperNight.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Super_Flash_Screen.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Super_Flash_Screen.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Super_Flash_ScreenTorch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Super_Flash_ScreenTorch.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Super_Flash_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Super_Flash_torch.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_TimeLapse.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_TimeLapse.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_TimeLapse_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_TimeLapse_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_TimeLapse_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_TimeLapse_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Video_1080P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Video_1080P_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Video_1080P_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Video_1080P_60fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Video_1080P_60fps_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Video_1080P_60fps_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Video_2k_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Video_2k_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Video_720P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Video_720P_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Video_EIS.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Video_EIS_zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Video_EIS_zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Video_Makeup_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Video_Makeup_720P.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcgc32e1mipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcgc32e1mipiraw_Video_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_360HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_360HDR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_3rd_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_3rd_Capture_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_3rd_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_3rd_Preview_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_ARshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_ARshot.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Boken_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Boken_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Capture_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Capture_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Dual_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Dual_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Facebeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Facebeauty_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_NHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Normal_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Normal_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Normal_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Normal_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Preview_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Preview_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Pro_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Pro_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Pro_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Pro_scene.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Resolution.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Resolution.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Resolution_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Resolution_zoom.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Scene_Capture_Remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Scene_Capture_Remosaic.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Scene_PreFlash_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Scene_PreFlash_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_SuperNight.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_TimeLapse_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_TimeLapse_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_TimeLapse_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_TimeLapse_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Video_1080p.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Video_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Video_120fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Video_240fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Video_240fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Video_2k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Video_2k.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Video_EIS.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Video_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pblcs5khm6sxmipiraw_Video_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pblcs5khm6sxmipiraw_Video_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_360VideoHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_360VideoHDR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_3rd_B612.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_3rd_B612.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_3rd_Capture_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_3rd_Preview_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_ARshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_ARshot.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Capture_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Default_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Default_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Default_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Default_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_FaceBeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_FaceBeauty_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_FaceBeauty_Capture_MF.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_FaceBeauty_Capture_MF.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_FilmVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_FilmVideo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Filter_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Filter_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_HDR_MINUS_EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_LLHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_LLHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_MT_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_MT_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_MT_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_MT_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_NHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Panorama_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Portrait_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Portrait_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Preview_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Pro_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Pro_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_ShortVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_ShortVideo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Slowmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Slowmotion.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_SuperNight.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Super_Flash_Screen.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Super_Flash_Screen.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Super_Flash_ScreenTorch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Super_Flash_ScreenTorch.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Super_Flash_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Super_Flash_torch.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_TimeLapse.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_TimeLapse.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_TimeLapse_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_TimeLapse_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_TimeLapse_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_TimeLapse_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Video_1080P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Video_1080P_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Video_1080P_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Video_1080P_60fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Video_1080P_60fps_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Video_1080P_60fps_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Video_2k_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Video_2k_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Video_720P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Video_720P_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Video_EIS.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Video_EIS_zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Video_EIS_zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Video_Makeup_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Video_Makeup_720P.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbrogc32e1mipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbrogc32e1mipiraw_Video_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_360HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_360HDR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_3rd_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_3rd_Capture_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_3rd_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_3rd_Preview_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Boken_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Boken_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Capture_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Capture_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_NHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Preview_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Preview_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Pro_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Pro_scene.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Resolution.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Resolution.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Resolution_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Resolution_zoom.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Scene_Capture_Remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Scene_Capture_Remosaic.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Scene_PreFlash_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Scene_PreFlash_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_SuperNight.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Video_1080p.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Video_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Video_120fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Video_240fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Video_240fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Video_2k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Video_2k.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Video_EIS.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Video_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_pbros5khm6sxmipiraw_Video_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_pbros5khm6sxmipiraw_Video_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_360HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_360HDR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_3rd_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_3rd_Capture_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_3rd_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_3rd_Preview_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_ARshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_ARshot.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Boken_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Boken_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Capture_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Capture_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Dual_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Dual_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Facebeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Facebeauty_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_NHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Normal_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Normal_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Normal_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Normal_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Preview_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Preview_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Pro_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Pro_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Pro_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Pro_scene.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Resolution.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Resolution.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Resolution_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Resolution_zoom.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Scene_Capture_Remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Scene_Capture_Remosaic.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Scene_PreFlash_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Scene_PreFlash_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_SuperNight.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_TimeLapse_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_TimeLapse_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_TimeLapse_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_TimeLapse_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Video_1080p.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Video_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Video_120fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Video_240fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Video_240fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Video_2k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Video_2k.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Video_EIS.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Video_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libCamera_s5khm6sxmipiraw_Video_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm6sxmipiraw_Video_Zoom2.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDefaultFpsActor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFrameRecord.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libHEVCdec_sa.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libHEVCdec_sa.ca7.android.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libJpgEncPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libJpgEncPipe.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcClient.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libMtkOmxAdpcmDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkOmxAdpcmDec.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libMtkOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkOmxAlacDec.so \
@@ -629,6 +861,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/libMtkSpeechEnh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkSpeechEnh.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libNoFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libNoFpsActor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libSQLiteModule_VER_ALL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSQLiteModule_VER_ALL.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libTEECommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTEECommon.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libTransNS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTransNS.so \
     vendor/infinix/X6837/proprietary/vendor/lib/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_iir.so \
@@ -638,6 +871,9 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libadpcmdec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaedv.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libasn1c_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libasn1c_core.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libasn1c_mapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libasn1c_mapi.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libasn1c_mdmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libasn1c_mdmi.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_param_parser-vnd.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioclient_aidl_conversion.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilter_vendor.so \
@@ -663,6 +899,9 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/libbluetoothem_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetoothem_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbwc.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libcam3_transerverengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam3_transerverengine.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libcamalgo.utility.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.utility.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera2ndk_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcustom_nvram.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvsd_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libdecrypt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdecrypt.so \
@@ -676,9 +915,23 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/libgralloctypes_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloctypes_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libgz_gp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgz_gp_client.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libgz_uree.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgz_uree.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libh264dec_customize.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_customize.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libh264dec_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_sa.ca7.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libh264dec_sd.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_sd.ca7.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libh264dec_se.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_se.ca7.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libh264enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264enc_sa.ca7.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libhdrvideo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdrvideo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhevce_sb.ca7.android.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libhydra.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhydra.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libhyperion_hap_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhyperion_hap_ca.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libicd_decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libicd_decoder.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libimgsensorca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimgsensorca.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_ulit.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libipsec_ims_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libipsec_ims_shr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libispcameraca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libispcameraca.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg-alpha-oal_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg-alpha_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libkaraoke.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkaraoke.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libladder.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmml.so \
@@ -700,11 +953,15 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhalwrap_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpqframework.so \
     vendor/infinix/X6837/proprietary/vendor/lib/librcs_volte_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcs_volte_core.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/librgbwlightsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/librgbwlightsensor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/librt_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib/librt_extamp_intf.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeech_enh_lib.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeechparser_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libtranslator_mapi_v3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtranslator_mapi_v3.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libtranslator_mdmi_v2.8.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtranslator_mdmi_v2.8.2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/libtranslator_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtranslator_utils.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libudf.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libvcodec_oal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodec_oal.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libvcodec_utility_plat.mt6789.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodec_utility_plat.mt6789.so \
@@ -718,11 +975,85 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/libvpud_vcodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpud_vcodec.so \
     vendor/infinix/X6837/proprietary/vendor/lib/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwo.so \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/arm.graphics-V1-ndk_platform.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/fake_serial_yuv_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/fake_serial_yuv_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/fake_serial_yuv_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/fake_serial_yuv_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/gc02m1macro_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/gc02m1macro_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/gc02m1macro_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/gc02m1macro_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/gc32e1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/gc32e1_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/gc32e1_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/gc32e1_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/hi1634q_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/hi1634q_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/lib3a.ae.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/lib3a.ae.core.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/lib3a.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/lib3a.ae.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/lib3a.aishutter.models.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/lib3a.aishutter.models.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/lib3a.awb.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/lib3a.awb.core.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/lib3a.log.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_E2EHDR_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_E2EHDR_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Face_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Flash_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_HDR_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_HDR_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_HDR_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_N3D_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_N3D_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_N3D_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_P1_YUV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Scene_Capture_4cell.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Scene_Preview_4k.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Scene_Preview_ZSD_Flash.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Video_1080.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_fakeserialyuv_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_fakeserialyuv_Video_4k.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_gc02m1macromipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc02m1macromipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_gc02m1macromipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc02m1macromipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_gc32e1mipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc32e1mipiraw_Face_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_gc32e1mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc32e1mipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_gc32e1mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc32e1mipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pblcgc02m1macromipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcgc02m1macromipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pblcgc02m1macromipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcgc02m1macromipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pblcgc32e1mipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcgc32e1mipiraw_Face_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pblcgc32e1mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcgc32e1mipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pblcgc32e1mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcgc32e1mipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pblcs5khm6sxmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcs5khm6sxmipiraw_Flash_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pblcs5khm6sxmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcs5khm6sxmipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pblcs5khm6sxmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcs5khm6sxmipiraw_Scene_Capture_4cell.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pblcs5khm6sxmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pblcs5khm6sxmipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pbrogc02m1macromipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbrogc02m1macromipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pbrogc02m1macromipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbrogc02m1macromipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pbrogc32e1mipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbrogc32e1mipiraw_Face_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pbrogc32e1mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbrogc32e1mipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pbrogc32e1mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbrogc32e1mipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pbros5khm6sxmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbros5khm6sxmipiraw_Flash_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pbros5khm6sxmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbros5khm6sxmipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pbros5khm6sxmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbros5khm6sxmipiraw_Scene_Capture_4cell.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_pbros5khm6sxmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_pbros5khm6sxmipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_s5khm6sxmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5khm6sxmipiraw_Flash_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_s5khm6sxmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5khm6sxmipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_s5khm6sxmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5khm6sxmipiraw_Scene_Capture_4cell.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libCamera_s5khm6sxmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5khm6sxmipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libaal_cust_func.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaal_cust_func.so \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaalservice.so \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaiselector.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcam.hal3a.log.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libcam.halsensor.hwintegration.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcam.halsensor.hwintegration.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libcamalgo.platform2.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcamalgo.platform2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libcameracustom.lens.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcameracustom.lens.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcameracustom.so \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libdpframework.so \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libgpudataproducer.so \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtk_drvb.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libmtkcam.atmseventmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam.atmseventmgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libmtkcam.eventcallback.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam.eventcallback.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libmtkcam_debugutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_debugutils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libmtkcam_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_metadata.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libmtkcam_modulehelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_modulehelper.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libmtkcam_stdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_stdutils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libmtkcam_sysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_sysutils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libmtkcam_tuning_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_tuning_utils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_ulog.so \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libnir_neon_driver.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libnir_neon_driver.so \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libpq_cust_base.so \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libpq_prot.so \
@@ -732,12 +1063,29 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libvcodecdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvcodecdrv.so \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libvcodecdrv_v3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvcodecdrv_v3a.so \
     vendor/infinix/X6837/proprietary/vendor/lib/mt6789/libvpudv3a_vcodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvpudv3a_vcodec.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/pblcgc02m1macro_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pblcgc02m1macro_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/pblcgc02m1macro_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pblcgc02m1macro_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/pblcgc32e1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pblcgc32e1_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/pblcgc32e1_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pblcgc32e1_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/pblcs5khm6sx_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pblcs5khm6sx_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/pblcs5khm6sx_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pblcs5khm6sx_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/pbrogc02m1macro_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pbrogc02m1macro_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/pbrogc02m1macro_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pbrogc02m1macro_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/pbrogc32e1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pbrogc32e1_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/pbrogc32e1_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pbrogc32e1_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/pbros5khm6sx_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pbros5khm6sx_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/pbros5khm6sx_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/pbros5khm6sx_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/s5khm6sx_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/s5khm6sx_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/mt6789/s5khm6sx_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/s5khm6sx_mipi_raw_tuning.so \
     vendor/infinix/X6837/proprietary/vendor/lib/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing.so \
     vendor/infinix/X6837/proprietary/vendor/lib/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@6.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@7.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.atms@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.camera.bgservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.bgservice@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.camera.bgservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.bgservice@1.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mmagent@1.0.so \
@@ -770,9 +1118,13 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.9.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.9.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.rcs@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.rcs@2.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/APUWareApusysServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareApusysServer.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/APUWareHmpServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareHmpServer.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/APUWareUtilsServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareUtilsServer.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/AVCSecureVdecCA.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/HEVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/HEVCSecureVdecCA.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/VP9SecureVdecCA.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/audio_common-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/audio_common-aidl-cpp.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_meow.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/egl/libMEOW_data.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_data.so \
@@ -797,9 +1149,16 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/hwcomposer.mtk_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mtk_common.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/kmsetkey.trustonic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/kmsetkey.trustonic.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/libMcGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libMcGatekeeper.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/gralloc.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/gralloc.common.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.ccap@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.ccap@1.0-impl.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.0-impl.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.1-impl.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/mt6789/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vulkan.mali.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/power.mt6789.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.mt6789.so \
@@ -813,14 +1172,231 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/lbs_hidl_service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lbs_hidl_service-impl.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/lib3a.ae.pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.ae.pipe.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libAVCSecureVencCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAVCSecureVencCA.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_360VideoHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_360VideoHDR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_3rd_B612.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_3rd_B612.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_3rd_Capture_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_3rd_Preview_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_ARshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_ARshot.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Capture_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Default_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Default_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Default_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Default_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_FaceBeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_FaceBeauty_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_FaceBeauty_Capture_MF.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_FaceBeauty_Capture_MF.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_FilmVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_FilmVideo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Filter_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Filter_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_HDR_MINUS_EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_LLHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_LLHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_MT_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_MT_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_MT_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_MT_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_NHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Panorama_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Portrait_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Portrait_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Preview_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Pro_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Pro_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_ShortVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_ShortVideo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Slowmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Slowmotion.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_SuperNight.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Super_Flash_Screen.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Super_Flash_Screen.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Super_Flash_ScreenTorch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Super_Flash_ScreenTorch.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Super_Flash_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Super_Flash_torch.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_TimeLapse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_TimeLapse.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_TimeLapse_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_TimeLapse_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_TimeLapse_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_TimeLapse_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Video_1080P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Video_1080P_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Video_1080P_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Video_1080P_60fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Video_1080P_60fps_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Video_1080P_60fps_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Video_2k_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Video_2k_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Video_720P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Video_720P_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Video_EIS.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Video_EIS_zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Video_EIS_zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Video_Makeup_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Video_Makeup_720P.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_gc32e1mipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc32e1mipiraw_Video_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_360VideoHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_360VideoHDR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_3rd_B612.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_3rd_B612.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_3rd_Capture_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_3rd_Preview_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_ARshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_ARshot.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Capture_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Default_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Default_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Default_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Default_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_FaceBeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_FaceBeauty_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_FaceBeauty_Capture_MF.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_FaceBeauty_Capture_MF.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_FilmVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_FilmVideo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Filter_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Filter_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_HDR_MINUS_EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_LLHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_LLHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_MT_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_MT_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_MT_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_MT_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_NHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Panorama_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Portrait_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Portrait_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Preview_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Pro_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Pro_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_ShortVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_ShortVideo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Slowmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Slowmotion.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_SuperNight.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Super_Flash_Screen.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Super_Flash_Screen.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Super_Flash_ScreenTorch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Super_Flash_ScreenTorch.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Super_Flash_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Super_Flash_torch.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_TimeLapse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_TimeLapse.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_TimeLapse_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_TimeLapse_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_TimeLapse_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_TimeLapse_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Video_1080P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Video_1080P_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Video_1080P_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Video_1080P_60fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Video_1080P_60fps_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Video_1080P_60fps_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Video_2k_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Video_2k_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Video_720P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Video_720P_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Video_EIS.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Video_EIS_zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Video_EIS_zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Video_Makeup_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Video_Makeup_720P.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcgc32e1mipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcgc32e1mipiraw_Video_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_360HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_360HDR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_3rd_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_3rd_Capture_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_3rd_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_3rd_Preview_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_ARshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_ARshot.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Boken_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Boken_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Capture_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Capture_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Dual_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Dual_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Facebeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Facebeauty_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_NHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Normal_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Normal_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Normal_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Normal_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Preview_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Preview_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Pro_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Pro_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Pro_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Pro_scene.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Resolution.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Resolution.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Resolution_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Resolution_zoom.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Scene_Capture_Remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Scene_Capture_Remosaic.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Scene_PreFlash_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Scene_PreFlash_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_SuperNight.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_TimeLapse_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_TimeLapse_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_TimeLapse_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_TimeLapse_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Video_1080p.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Video_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Video_120fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Video_240fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Video_240fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Video_2k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Video_2k.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Video_EIS.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Video_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pblcs5khm6sxmipiraw_Video_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pblcs5khm6sxmipiraw_Video_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_360VideoHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_360VideoHDR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_3rd_B612.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_3rd_B612.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_3rd_Capture_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_3rd_Preview_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_ARshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_ARshot.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Capture_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Default_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Default_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Default_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Default_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_FaceBeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_FaceBeauty_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_FaceBeauty_Capture_MF.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_FaceBeauty_Capture_MF.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_FilmVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_FilmVideo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Filter_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Filter_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_HDR_MINUS_EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_HDR_MINUS_EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_LLHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_LLHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_MT_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_MT_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_MT_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_MT_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_NHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Panorama_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Portrait_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Portrait_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Preview_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Pro_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Pro_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_ShortVideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_ShortVideo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Slowmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Slowmotion.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_SuperNight.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Super_Flash_Screen.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Super_Flash_Screen.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Super_Flash_ScreenTorch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Super_Flash_ScreenTorch.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Super_Flash_torch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Super_Flash_torch.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_TimeLapse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_TimeLapse.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_TimeLapse_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_TimeLapse_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_TimeLapse_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_TimeLapse_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Video_1080P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Video_1080P_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Video_1080P_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Video_1080P_60fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Video_1080P_60fps_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Video_1080P_60fps_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Video_2k_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Video_2k_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Video_720P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Video_720P_30fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Video_EIS.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Video_EIS_zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Video_EIS_zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Video_Makeup_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Video_Makeup_720P.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbrogc32e1mipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbrogc32e1mipiraw_Video_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_360HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_360HDR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_3rd_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_3rd_Capture_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_3rd_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_3rd_Preview_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Boken_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Boken_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Capture_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Capture_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_NHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Preview_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Preview_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Pro_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Pro_scene.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Resolution.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Resolution.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Resolution_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Resolution_zoom.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Scene_Capture_Remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Scene_Capture_Remosaic.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Scene_PreFlash_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Scene_PreFlash_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_SuperNight.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Video_1080p.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Video_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Video_120fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Video_240fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Video_240fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Video_2k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Video_2k.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Video_EIS.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Video_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_pbros5khm6sxmipiraw_Video_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_pbros5khm6sxmipiraw_Video_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_360HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_360HDR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_3rd_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_3rd_Capture_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_3rd_Capture_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_3rd_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_3rd_Preview_FD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_3rd_Preview_FD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_ARshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_ARshot.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Boken_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Boken_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Capture_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Capture_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Dual_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Dual_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Facebeauty_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Facebeauty_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_NHDR_0EV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_NHDR_0EV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Normal_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Normal_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Normal_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Normal_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Preview_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Preview_Zoom2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Pro_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Pro_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Pro_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Pro_scene.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Resolution.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Resolution.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Resolution_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Resolution_zoom.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Scene_Capture_Remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Scene_Capture_Remosaic.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Scene_PreFlash_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Scene_PreFlash_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_SuperNight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_SuperNight.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_TimeLapse_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_TimeLapse_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_TimeLapse_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_TimeLapse_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Video_1080p.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Video_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Video_120fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Video_240fps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Video_240fps.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Video_2k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Video_2k.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Video_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Video_EIS.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Video_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Video_Zoom1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libCamera_s5khm6sxmipiraw_Video_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5khm6sxmipiraw_Video_Zoom2.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDefaultFpsActor.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFrameRecord.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libFy-3A-Core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFy-3A-Core.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libFy-3A-Param.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFy-3A-Param.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libJpgEncPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libJpgEncPipe.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMcClient.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libMtkOmxCore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMtkOmxCore.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libMtkSpeechEnh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMtkSpeechEnh.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libNoFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libNoFpsActor.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libSQLiteModule_VER_ALL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSQLiteModule_VER_ALL.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libTEECommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTEECommon.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libTranAutoColorLevel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTranAutoColorLevel.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libTranExtImgThread.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTranExtImgThread.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libTranVideoSupeNightYuv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTranVideoSupeNightYuv.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libTransNS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTransNS.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_iir.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/lib_speech_enh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_speech_enh.so \
@@ -828,6 +1404,13 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_key.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaedv.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaibld.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaibld.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libaipe_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaipe_bokeh.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libanc_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libanc_hdr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libanc_hdr_adapter_gc32e1_17201856_front_g97.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libanc_hdr_adapter_gc32e1_17201856_front_g97.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libanc_hdr_adapter_s5khm6sx_17201842_back_g97.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libanc_hdr_adapter_s5khm6sx_17201842_back_g97.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libancbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libancbase.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libancbase_848.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libancbase_848.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libapu_mdw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu_mdw.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libapu_mdw_batch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu_mdw_batch.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libapusys.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapusys.so \
@@ -862,6 +1445,28 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/libbluetoothem_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetoothem_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbwc.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcam.seninfn3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.seninfn3d.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcam3_tranelapsedtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam3_tranelapsedtime.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcam3_tranpriorityctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam3_tranpriorityctrl.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcam3_transerverengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam3_transerverengine.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.3dnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.3dnr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.WarpMapResizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.WarpMapResizer.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.dngop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.dngop.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.eis.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.fdft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.fdft.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.fsc.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.gyro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.gyro.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.hdr10p.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.hdr10p.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.lmv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.lmv.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.mcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.mcnr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.n3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.n3d.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.nr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.nr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.platform.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.utility.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.utility.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.vsdofUtil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.vsdofUtil.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamalgo.warp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.warp.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libcares_naptr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcares_naptr.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libcarrierconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcarrierconfig.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libccci_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libccci_util.so \
@@ -877,6 +1482,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_mtk_msadpcmdec.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libcodec2_vpp_qt_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_qt_plugin.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libcodec2_vpp_rs_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_rs_plugin.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libcolorlevel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcolorlevel.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libcomposer_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcomposer_ext.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libconnfem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconnfem.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcustom_nvram.so \
@@ -886,6 +1492,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfile_op.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libforkexecwrap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libforkexecwrap.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libformatter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libformatter.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libfp_ext_svc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfp_ext_svc2.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libged.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ca.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
@@ -897,12 +1504,23 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/libgralloctypes_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloctypes_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libgz_gp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgz_gp_client.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libgz_uree.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgz_uree.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libhdrvideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrvideo.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libheichal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libheichal.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhevce_sb.ca7.android.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libhfmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfmanager.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libhwm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwm.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libhydra.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhydra.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libhyperion_hap_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhyperion_hap_ca.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libicd_decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libicd_decoder.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libifcutils_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libifcutils_mtk.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libimagebuffer_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimagebuffer_wrapper.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libimgsensorca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsensorca.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_ulit.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libipsec_ims_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipsec_ims_shr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libispcameraca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libispcameraca.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha-oal_vendor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libkaraoke.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkaraoke.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libkmsetkey.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkmsetkey.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libksensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libksensor.so \
@@ -913,6 +1531,9 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmsbc_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmsbc_mtk.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtk-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk-ril.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtkares.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkares.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libmtkcam_3rdparty.thread.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdparty.thread.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libmtkcam_fdWarpConvert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_fdWarpConvert.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libmtkcam_pipelinepolicy-aov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy-aov.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtkconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkconfig.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtkconfigutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkconfigutils.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libmtkcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcutils.so \
@@ -944,7 +1565,10 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/libpowerhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhal.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhalwrap_vendor.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqframework.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libprotobuf-cpp-full-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-3.9.1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libprotobuf-cpp-lite-3.9.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite-3.9.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libratconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libratconfig.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/librgbwlightsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librgbwlightsensor.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/librilfusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilfusion.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/librpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpc.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/librt_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librt_extamp_intf.so \
@@ -957,10 +1581,13 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libtlcWidevineModularDrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlcWidevineModularDrm.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libtneclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtneclient.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libtrancamJsonConvertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrancamJsonConvertor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libtrancam_filelockmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrancam_filelockmgr.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libtranlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranlog.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libtranslator_mapi_v3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranslator_mapi_v3.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libtranslator_mdmi_v2.8.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranslator_mdmi_v2.8.2.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libtranslator_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranslator_utils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libtranssion_forkexecwrap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranssion_forkexecwrap.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libtrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrm.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libudf.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/liburee_meta_drmkeyinstall.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liburee_meta_drmkeyinstall.so \
@@ -972,22 +1599,320 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwo.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libwpfa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwpfa.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/libyuvenhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libyuvenhance.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/arm.graphics-V1-ndk_platform.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/fake_serial_yuv_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/fake_serial_yuv_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/fake_serial_yuv_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/fake_serial_yuv_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/gc02m1macro_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/gc02m1macro_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/gc02m1macro_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/gc02m1macro_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/gc32e1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/gc32e1_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/gc32e1_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/gc32e1_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/hi1634q_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/hi1634q_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.ae.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.ae.core.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.ae.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.ae.stat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.ae.stat.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.af.assist.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.af.assist.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.af.assist.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.af.assist.utils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.af.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.af.core.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.af.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.aishutter.models.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.aishutter.models.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.alsflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.alsflicker.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.awb.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.awb.core.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.ccudrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.ccudrv.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.ccuif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.ccuif.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.custom.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.custom.ae.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.dce.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.dce.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.flash.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.flicker.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.gma.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.gma.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.lce.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.lce.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.log.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.n3d3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.n3d3a.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.sensors.color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.sensors.color.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/lib3a.sensors.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.sensors.flicker.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_E2EHDR_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_E2EHDR_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Face_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Flash_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_HDR_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_HDR_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_HDR_Reconfig_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_HDR_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_N3D_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_N3D_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_N3D_Video.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_P1_YUV.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Scene_Capture_4cell.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Scene_Preview_4k.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Scene_Preview_ZSD_Flash.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Video_1080.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_fakeserialyuv_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_fakeserialyuv_Video_4k.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_gc02m1macromipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc02m1macromipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_gc02m1macromipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc02m1macromipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_gc32e1mipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc32e1mipiraw_Face_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_gc32e1mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc32e1mipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_gc32e1mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc32e1mipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pblcgc02m1macromipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcgc02m1macromipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pblcgc02m1macromipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcgc02m1macromipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pblcgc32e1mipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcgc32e1mipiraw_Face_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pblcgc32e1mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcgc32e1mipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pblcgc32e1mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcgc32e1mipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pblcs5khm6sxmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcs5khm6sxmipiraw_Flash_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pblcs5khm6sxmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcs5khm6sxmipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pblcs5khm6sxmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcs5khm6sxmipiraw_Scene_Capture_4cell.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pblcs5khm6sxmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pblcs5khm6sxmipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pbrogc02m1macromipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbrogc02m1macromipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pbrogc02m1macromipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbrogc02m1macromipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pbrogc32e1mipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbrogc32e1mipiraw_Face_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pbrogc32e1mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbrogc32e1mipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pbrogc32e1mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbrogc32e1mipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pbros5khm6sxmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbros5khm6sxmipiraw_Flash_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pbros5khm6sxmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbros5khm6sxmipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pbros5khm6sxmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbros5khm6sxmipiraw_Scene_Capture_4cell.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_pbros5khm6sxmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_pbros5khm6sxmipiraw_Scene_Preview.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_s5khm6sxmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5khm6sxmipiraw_Flash_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_s5khm6sxmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5khm6sxmipiraw_Scene_Capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_s5khm6sxmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5khm6sxmipiraw_Scene_Capture_4cell.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libCamera_s5khm6sxmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5khm6sxmipiraw_Scene_Preview.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libDR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libGCore4Cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libGCore4Cell.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libImageEval.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libImageEval.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libNvLutEffect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libNvLutEffect.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libSonyIMX230PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX230PdafLibrary.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libSonyIMX230PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX230PdafLibraryWrapper.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libSonyIMX338PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX338PdafLibrary.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libSonyIMX338PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX338PdafLibraryWrapper.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libSonyIMX386PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX386PdafLibrary.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libSonyIMX386PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX386PdafLibraryWrapper.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libSonyIMX519PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX519PdafLibrary.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libSonyIMX519PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX519PdafLibraryWrapper.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranASD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranASD.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranArcFilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranArcFilter.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranArcFlashNew.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranArcFlashNew.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranArcHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranArcHDR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranArcLLHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranArcLLHDR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranArcLowLight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranArcLowLight.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranBefMakeup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranBefMakeup.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranDenoise.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranDenoise.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranExtImgProc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranExtImgProc.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranEyeDetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranEyeDetect.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranGenderDetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranGenderDetect.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranHumanLight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranHumanLight.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranITDFaceBeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranITDFaceBeauty.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranMSFilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranMSFilter.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranMagicSky.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranMagicSky.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranPlatHW.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranPlatHW.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranSTPRRepair.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranSTPRRepair.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranSTSingleBlur.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranSTSingleBlur.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranSlimBody.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranSlimBody.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranSmartDetection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranSmartDetection.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTranSuperResolution.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTranSuperResolution.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTran_Log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTran_Log.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libTran_mtkPowerAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libTran_mtkPowerAPI.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libWaterMarkProc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libWaterMarkProc.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libaaa_ltm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaaa_ltm.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libaaa_ltmx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaaa_ltmx.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libaal_cust_func.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaal_cust_func.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaalservice.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libacdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libacdk.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libaiawb_moon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaiawb_moon.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libaiawb_p1ggm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaiawb_p1ggm.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libaiawb_sun.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaiawb_sun.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libaibc_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaibc_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libaibc_tuning_p2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaibc_tuning_p2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libaibc_tuning_p3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaibc_tuning_p3.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libaibc_tuning_p4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaibc_tuning_p4.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libaidepth_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaidepth_tuning.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaiselector.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libamipengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libamipengine.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libarcsoft_high_dynamic_range.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libarcsoft_low_light_hdr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libarcsoft_low_light_shot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libarcsoft_low_light_shot.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libarcsoft_torch_portrait_night.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libarcsoft_torch_portrait_night.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcalculatesharpness.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcalculatesharpness.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.afhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.afhal.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.chdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.chdr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.feature_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.feature_utils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.hal3a.cctsvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.cctsvr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.log.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.ae.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.ai3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.ai3a.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.awb.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.dng.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.dng.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.fsmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.fsmgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.lscMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.lscMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.lsctbl.50.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.lsctbl.50.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.nvram.50.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.nvram.50.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.platform.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.resultpool.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.resultpool.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.halisp.buf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.halisp.buf.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.halisp.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.halisp.common.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.halisp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.halisp.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.halsensor.hwintegration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.halsensor.hwintegration.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.halsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.halsensor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.iopipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.iopipe.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.isptuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.isptuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.pdtblgen.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.pdtblgen.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.tuning.cache.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.tuning.cache.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.utils.sensorprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.utils.sensorprovider.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam.vhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.vhdr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcam3atms_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam3atms_profiles.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcamalgo.ispfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamalgo.ispfeature.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcamalgo.lsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamalgo.lsc.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcamalgo.platform2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamalgo.platform2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcamalgo.rotate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamalgo.rotate.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcamalgo.vsf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamalgo.vsf.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcamdrv_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamdrv_isp.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcamdrv_tuning_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamdrv_tuning_mgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcamdrv_twin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamdrv_twin.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcamera.custom.pd_buf_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamera.custom.pd_buf_mgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcamera.customae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamera.customae.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcamera.customaf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamera.customaf.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcamera.customawb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamera.customawb.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcamera.customflk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamera.customflk.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcameracustom.camera.3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.camera.3a.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcameracustom.camera.isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.camera.isp.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcameracustom.camera.sensors.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.camera.sensors.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcameracustom.camera_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.camera_exif.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcameracustom.flashlight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.flashlight.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcameracustom.lens.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.lens.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcameracustom.plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.plugin.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libdenoise.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libdenoise.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libdip_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libdip_drv.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libdip_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libdip_postproc.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libdpframework.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libeffect_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libeffect_hal.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libeffecthal.base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libeffecthal.base.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libeyedetector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libeyedetector.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libfacesattribute.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfacesattribute.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libfeature.face.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature.face.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libfeature.stereo.provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature.stereo.provider.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libfeature.vsdof.hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature.vsdof.hal.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libfeature_3dnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature_3dnr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libfeature_fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature_fsc.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libfeature_lmv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature_lmv.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libfeature_rss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature_rss.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libfeatureiodrv_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeatureiodrv_mem.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libgpudataproducer.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libimageio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libimageio.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libimageio_plat_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libimageio_plat_drv.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libimageio_plat_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libimageio_plat_pipe.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libitdfacebeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libitdfacebeauty.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/liblpcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/liblpcnr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmagicsky_64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmagicsky_64.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmnl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmnl.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmorpho_HDSR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmorpho_HDSR.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmorpho_video_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmorpho_video_stabilizer.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmpbase.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmsnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmsnr.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtk_drvb.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam.atmseventmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.atmseventmgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam.eventcallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.eventcallback.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam.featurepipe.capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.featurepipe.capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam.featurepipe.depthmap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.featurepipe.depthmap.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam.featurepipe.streaming.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.featurepipe.streaming.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam.featurepipe.vsdof_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.featurepipe.vsdof_util.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam.logicalmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.logicalmodule.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_3rdparty.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_3rdparty.core.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_3rdparty.customer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_3rdparty.customer.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_3rdparty.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_3rdparty.mtk.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_3rdparty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_3rdparty.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_calibration_convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_calibration_convertor.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_calibration_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_calibration_provider.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_debugutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_debugutils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_device3_app.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_device3_app.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_device3_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_device3_hal.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_device3_hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_device3_hidl.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_device3_hidlutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_device3_hidlutils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_device3_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_device3_utils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_devicesessionpolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_devicesessionpolicy.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_diputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_diputils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_exif.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_fdvt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_fdvt.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_featurepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_featurepolicy.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_featureutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_featureutils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_fwkutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_fwkutils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_grallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_grallocutils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_hwnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_hwnode.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_hwutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_hwutils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_imem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_imem.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_imgbuf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_imgbuf.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_mapping_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_mapping_mgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_metadata.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_metastore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_metastore.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_mfb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_mfb.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_modulefactory_aaa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_modulefactory_aaa.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_modulefactory_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_modulefactory_custom.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_modulefactory_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_modulefactory_drv.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_modulefactory_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_modulefactory_utils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_modulehelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_modulehelper.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_owe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_owe.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_pipeline.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipeline.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_pipeline_fbm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipeline_fbm.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_adapter.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_capture.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_isp.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_session.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_utils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_zsl.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinepolicy-security.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinepolicy-security.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinepolicy-smvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinepolicy-smvr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinepolicy.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinepolicy_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinepolicy_factory.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_prerelease.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_prerelease.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_rsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_rsc.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_scenariorecorder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_scenariorecorder.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_stdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_stdutils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_streamutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_streamutils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_synchelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_synchelper.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_sysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_sysutils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_tuning_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_tuning_utils.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_ulog.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libneuron_adapter_mgvi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libneuron_adapter_mgvi.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libneuron_runtime.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libneuron_runtime.5.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libnir_neon_driver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libnir_neon_driver.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libportrait_repair_ppl3_ocl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libportrait_repair_ppl3_ocl.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libpq_cust_base.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libpq_prot.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libpqparamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libpqparamparser.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libremosaic_wrapper.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libremosaiclib.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/librmsclib1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/librmsclib1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libsegmention.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libsegmention.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libsegmentionPre.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libsegmentionPre.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libsmartdetector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libsmartdetector.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libst_mobile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libst_mobile.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libstblur_capture_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libstblur_capture_api.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libstereoinfoaccessor_vsdof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libstereoinfoaccessor_vsdof.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libtf_asd_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libtf_asd_lib.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libtflite_native_gainference.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libtflite_native_gainference.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libtflite_native_inference.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libtflite_native_inference.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libtflite_native_seginference.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libtflite_native_seginference.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libtranssion_bodybeauty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libtranssion_bodybeauty.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/libvainr_model.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libvainr_model.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/pblcgc02m1macro_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pblcgc02m1macro_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/pblcgc02m1macro_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pblcgc02m1macro_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/pblcgc32e1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pblcgc32e1_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/pblcgc32e1_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pblcgc32e1_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/pblcs5khm6sx_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pblcs5khm6sx_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/pblcs5khm6sx_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pblcs5khm6sx_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/pbrogc02m1macro_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pbrogc02m1macro_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/pbrogc02m1macro_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pbrogc02m1macro_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/pbrogc32e1_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pbrogc32e1_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/pbrogc32e1_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pbrogc32e1_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/pbros5khm6sx_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pbros5khm6sx_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/pbros5khm6sx_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/pbros5khm6sx_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/s5khm6sx_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/s5khm6sx_mipi_raw_IdxMgr.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mt6789/s5khm6sx_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/s5khm6sx_mipi_raw_tuning.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/mtkcam/mt6789/libmtkcam_streaminfo_plugin-p1stt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mtkcam/mt6789/libmtkcam_streaminfo_plugin-p1stt.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/nfc_nci_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_nxp.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing_mtk.so \
@@ -999,6 +1924,16 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio@7.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.atms@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.ccap@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.ccap@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.security@1.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.clientapi@1.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.composer_ext@1.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.mediatek.hardware.dmc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.dmc@1.0.so \
@@ -1046,6 +1981,9 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.nxp.nxpese@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpese@1.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.nxp.nxpnfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfc@2.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfclegacy@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.transsion.hardware.tranlog@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.transsion.hardware.tranlog@1.0.so \
+    vendor/infinix/X6837/proprietary/vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.trustonic.tee.tui@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee.tui@1.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.trustonic.tee@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee@1.0.so \
     vendor/infinix/X6837/proprietary/vendor/lib64/vendor.trustonic.tee@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee@1.1.so
@@ -1073,6 +2011,8 @@ PRODUCT_PACKAGES += \
     manifest_apuware_apusys \
     manifest_apuware_hmp \
     manifest_apuware_utils \
+    manifest_cameraprovider \
     manifest_hwcomposer \
     manifest_media_c2_V1_1_default \
-    power-mtk
+    power-mtk \
+    vendor.transsion.hardware.trancam.trancamserver@1.0
