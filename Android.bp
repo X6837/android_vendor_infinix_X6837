@@ -154,6 +154,33 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "manifest_apuware_apusys",
+	owner: "infinix",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_apuware_apusys.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_apuware_hmp",
+	owner: "infinix",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_apuware_hmp.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_apuware_utils",
+	owner: "infinix",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_apuware_utils.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "manifest_hwcomposer",
 	owner: "infinix",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_hwcomposer.xml",
